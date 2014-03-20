@@ -59,6 +59,7 @@
 
 #pragma mark - Static Methods;
 
++(NSArray *)animationImagesArrayWithName:(NSString *)imageName numberOfFrames:(NSInteger)numberOfFrames numberOfZeroes:(NSInteger)numberOfZeroes;
 +(NSArray *)animationImagesArrayWithName:(NSString *)imageName numberOfFrames:(NSInteger)numberOfFrames;
 
 @end

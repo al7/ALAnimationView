@@ -166,7 +166,8 @@
 #pragma mark - Static Methods;
 
 +(NSArray *)animationImagesArrayWithName:(NSString *)imageName
-                          numberOfFrames:(NSInteger)numberOfFrames {
+                          numberOfFrames:(NSInteger)numberOfFrames
+                          numberOfZeroes:(NSInteger)numberOfZeroes{
     
     NSMutableArray *result = [NSMutableArray array];
     for (NSInteger imageI = 1; imageI <= numberOfFrames; imageI++) {
@@ -175,6 +176,10 @@
         [result addObject:[UIImage imageNamed:processedImageName]];
     }
     return [NSArray arrayWithArray:result];
+}
+
++(NSArray *)animationImagesArrayWithName:(NSString *)imageName numberOfFrames:(NSInteger)numberOfFrames {
+    return [ALAnimationView animationImagesArrayWithName:imageName numberOfFrames:numberOfFrames numberOfZeroes:3];
 }
 
 @end

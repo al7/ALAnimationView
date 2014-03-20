@@ -20,6 +20,8 @@
 		13732A4818DB7EB700F5216C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13732A4618DB7EB700F5216C /* InfoPlist.strings */; };
 		13732A4A18DB7EB700F5216C /* ALAnimationViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13732A4918DB7EB700F5216C /* ALAnimationViewTests.m */; };
 		13732A5618DB897300F5216C /* ALAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13732A5518DB897300F5216C /* ALAnimationView.m */; };
+		13732A5918DB8B0D00F5216C /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13732A5818DB8B0D00F5216C /* DemoViewController.m */; };
+		13732A5C18DB8B1C00F5216C /* DemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13732A5B18DB8B1C00F5216C /* DemoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		13732A4918DB7EB700F5216C /* ALAnimationViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAnimationViewTests.m; sourceTree = "<group>"; };
 		13732A5418DB897300F5216C /* ALAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAnimationView.h; sourceTree = "<group>"; };
 		13732A5518DB897300F5216C /* ALAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAnimationView.m; sourceTree = "<group>"; };
+		13732A5718DB8B0D00F5216C /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		13732A5818DB8B0D00F5216C /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		13732A5A18DB8B1C00F5216C /* DemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoView.h; sourceTree = "<group>"; };
+		13732A5B18DB8B1C00F5216C /* DemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				13732A3418DB7EB700F5216C /* ALAppDelegate.m */,
 				13732A3618DB7EB700F5216C /* Images.xcassets */,
 				13732A2B18DB7EB700F5216C /* Supporting Files */,
+				13732A5718DB8B0D00F5216C /* DemoViewController.h */,
+				13732A5818DB8B0D00F5216C /* DemoViewController.m */,
+				13732A5A18DB8B1C00F5216C /* DemoView.h */,
+				13732A5B18DB8B1C00F5216C /* DemoView.m */,
 			);
 			path = ALAnimationView;
 			sourceTree = "<group>";
@@ -257,8 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				13732A5618DB897300F5216C /* ALAnimationView.m in Sources */,
+				13732A5C18DB8B1C00F5216C /* DemoView.m in Sources */,
 				13732A3118DB7EB700F5216C /* main.m in Sources */,
 				13732A3518DB7EB700F5216C /* ALAppDelegate.m in Sources */,
+				13732A5918DB8B0D00F5216C /* DemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
