@@ -192,6 +192,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = al7dev;
 				TargetAttributes = {
+					13732A2018DB7EB700F5216C = {
+						DevelopmentTeam = 96868V37B6;
+					};
 					13732A3B18DB7EB700F5216C = {
 						TestTargetID = 13732A2018DB7EB700F5216C;
 					};
@@ -362,9 +365,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ALAnimationView/ALAnimationView-Prefix.pch";
 				INFOPLIST_FILE = "ALAnimationView/ALAnimationView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -375,9 +380,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ALAnimationView/ALAnimationView-Prefix.pch";
 				INFOPLIST_FILE = "ALAnimationView/ALAnimationView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
