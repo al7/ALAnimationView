@@ -19,6 +19,7 @@
 		13732A4018DB7EB700F5216C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13732A2818DB7EB700F5216C /* UIKit.framework */; };
 		13732A4818DB7EB700F5216C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13732A4618DB7EB700F5216C /* InfoPlist.strings */; };
 		13732A4A18DB7EB700F5216C /* ALAnimationViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13732A4918DB7EB700F5216C /* ALAnimationViewTests.m */; };
+		13732A5618DB897300F5216C /* ALAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13732A5518DB897300F5216C /* ALAnimationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		13732A4518DB7EB700F5216C /* ALAnimationViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ALAnimationViewTests-Info.plist"; sourceTree = "<group>"; };
 		13732A4718DB7EB700F5216C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13732A4918DB7EB700F5216C /* ALAnimationViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALAnimationViewTests.m; sourceTree = "<group>"; };
+		13732A5418DB897300F5216C /* ALAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAnimationView.h; sourceTree = "<group>"; };
+		13732A5518DB897300F5216C /* ALAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAnimationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		13732A2A18DB7EB700F5216C /* ALAnimationView */ = {
 			isa = PBXGroup;
 			children = (
+				13732A5318DB88AD00F5216C /* Source */,
 				13732A3318DB7EB700F5216C /* ALAppDelegate.h */,
 				13732A3418DB7EB700F5216C /* ALAppDelegate.m */,
 				13732A3618DB7EB700F5216C /* Images.xcassets */,
@@ -142,6 +146,15 @@
 				13732A4618DB7EB700F5216C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13732A5318DB88AD00F5216C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				13732A5418DB897300F5216C /* ALAnimationView.h */,
+				13732A5518DB897300F5216C /* ALAnimationView.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13732A5618DB897300F5216C /* ALAnimationView.m in Sources */,
 				13732A3118DB7EB700F5216C /* main.m in Sources */,
 				13732A3518DB7EB700F5216C /* ALAppDelegate.m in Sources */,
 			);
