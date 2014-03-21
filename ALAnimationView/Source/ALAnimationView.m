@@ -192,9 +192,7 @@
             [result addObject:animationImage];
         }
         else {
-            if (DEBUG) {
-                NSLog(@"ALAnimationView: ERROR: Couldn't find image: %@", processedImageName);
-            }
+            NSLog(@"ALAnimationView: ERROR: Couldn't find image: %@", processedImageName);
         }
     }
     return [NSArray arrayWithArray:result];
