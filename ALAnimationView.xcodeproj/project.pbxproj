@@ -22,6 +22,15 @@
 		13732A5618DB897300F5216C /* ALAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13732A5518DB897300F5216C /* ALAnimationView.m */; };
 		13732A5918DB8B0D00F5216C /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13732A5818DB8B0D00F5216C /* DemoViewController.m */; };
 		13732A5C18DB8B1C00F5216C /* DemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13732A5B18DB8B1C00F5216C /* DemoView.m */; };
+		13EE917818DCBB6F00548DF6 /* Gears0001@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EE916F18DCBB6F00548DF6 /* Gears0001@2x.png */; };
+		13EE917918DCBB6F00548DF6 /* Gears0002@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EE917018DCBB6F00548DF6 /* Gears0002@2x.png */; };
+		13EE917A18DCBB6F00548DF6 /* Gears0003@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EE917118DCBB6F00548DF6 /* Gears0003@2x.png */; };
+		13EE917B18DCBB6F00548DF6 /* Gears0004@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EE917218DCBB6F00548DF6 /* Gears0004@2x.png */; };
+		13EE917C18DCBB6F00548DF6 /* Gears0005@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EE917318DCBB6F00548DF6 /* Gears0005@2x.png */; };
+		13EE917D18DCBB6F00548DF6 /* Gears0006@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EE917418DCBB6F00548DF6 /* Gears0006@2x.png */; };
+		13EE917E18DCBB6F00548DF6 /* Gears0007@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EE917518DCBB6F00548DF6 /* Gears0007@2x.png */; };
+		13EE917F18DCBB6F00548DF6 /* Gears0008@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EE917618DCBB6F00548DF6 /* Gears0008@2x.png */; };
+		13EE918018DCBB6F00548DF6 /* Gears0009@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13EE917718DCBB6F00548DF6 /* Gears0009@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +66,15 @@
 		13732A5818DB8B0D00F5216C /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		13732A5A18DB8B1C00F5216C /* DemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoView.h; sourceTree = "<group>"; };
 		13732A5B18DB8B1C00F5216C /* DemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoView.m; sourceTree = "<group>"; };
+		13EE916F18DCBB6F00548DF6 /* Gears0001@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gears0001@2x.png"; sourceTree = "<group>"; };
+		13EE917018DCBB6F00548DF6 /* Gears0002@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gears0002@2x.png"; sourceTree = "<group>"; };
+		13EE917118DCBB6F00548DF6 /* Gears0003@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gears0003@2x.png"; sourceTree = "<group>"; };
+		13EE917218DCBB6F00548DF6 /* Gears0004@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gears0004@2x.png"; sourceTree = "<group>"; };
+		13EE917318DCBB6F00548DF6 /* Gears0005@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gears0005@2x.png"; sourceTree = "<group>"; };
+		13EE917418DCBB6F00548DF6 /* Gears0006@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gears0006@2x.png"; sourceTree = "<group>"; };
+		13EE917518DCBB6F00548DF6 /* Gears0007@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gears0007@2x.png"; sourceTree = "<group>"; };
+		13EE917618DCBB6F00548DF6 /* Gears0008@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gears0008@2x.png"; sourceTree = "<group>"; };
+		13EE917718DCBB6F00548DF6 /* Gears0009@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gears0009@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +134,7 @@
 		13732A2A18DB7EB700F5216C /* ALAnimationView */ = {
 			isa = PBXGroup;
 			children = (
+				13EE916E18DCBB6F00548DF6 /* Images */,
 				13732A5318DB88AD00F5216C /* Source */,
 				13732A3318DB7EB700F5216C /* ALAppDelegate.h */,
 				13732A3418DB7EB700F5216C /* ALAppDelegate.m */,
@@ -165,6 +184,22 @@
 				13732A5518DB897300F5216C /* ALAnimationView.m */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		13EE916E18DCBB6F00548DF6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				13EE916F18DCBB6F00548DF6 /* Gears0001@2x.png */,
+				13EE917018DCBB6F00548DF6 /* Gears0002@2x.png */,
+				13EE917118DCBB6F00548DF6 /* Gears0003@2x.png */,
+				13EE917218DCBB6F00548DF6 /* Gears0004@2x.png */,
+				13EE917318DCBB6F00548DF6 /* Gears0005@2x.png */,
+				13EE917418DCBB6F00548DF6 /* Gears0006@2x.png */,
+				13EE917518DCBB6F00548DF6 /* Gears0007@2x.png */,
+				13EE917618DCBB6F00548DF6 /* Gears0008@2x.png */,
+				13EE917718DCBB6F00548DF6 /* Gears0009@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +282,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				13732A2F18DB7EB700F5216C /* InfoPlist.strings in Resources */,
+				13EE917F18DCBB6F00548DF6 /* Gears0008@2x.png in Resources */,
+				13EE917B18DCBB6F00548DF6 /* Gears0004@2x.png in Resources */,
+				13EE917A18DCBB6F00548DF6 /* Gears0003@2x.png in Resources */,
+				13EE917918DCBB6F00548DF6 /* Gears0002@2x.png in Resources */,
+				13EE917E18DCBB6F00548DF6 /* Gears0007@2x.png in Resources */,
+				13EE917818DCBB6F00548DF6 /* Gears0001@2x.png in Resources */,
+				13EE918018DCBB6F00548DF6 /* Gears0009@2x.png in Resources */,
+				13EE917D18DCBB6F00548DF6 /* Gears0006@2x.png in Resources */,
+				13EE917C18DCBB6F00548DF6 /* Gears0005@2x.png in Resources */,
 				13732A3718DB7EB700F5216C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +521,7 @@
 				13732A4F18DB7EB700F5216C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13732A5018DB7EB700F5216C /* Build configuration list for PBXNativeTarget "ALAnimationViewTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +530,7 @@
 				13732A5218DB7EB700F5216C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

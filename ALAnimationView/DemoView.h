@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ALAnimationView.h"
 
 @interface DemoView : UIView
+
+@property (strong, nonatomic) ALAnimationView *demoAnimatioView;
+@property (strong, nonatomic) UIButton *playPauseButton;
+@property (strong, nonatomic) UIButton *rewindButton;
+@property (strong, nonatomic) UILabel *outputLabel;
 
 @end

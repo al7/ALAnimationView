@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "DemoView.h"
 
-@interface DemoViewController : UIViewController
+@interface DemoViewController : UIViewController <ALAnimationViewDelegate>
 
-@property (strong, nonatomic) UIView *demoView;
+@property (strong, nonatomic) DemoView *demoView;
 
 @end

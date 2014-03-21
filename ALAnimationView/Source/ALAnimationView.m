@@ -84,8 +84,8 @@
 -(void)play {
     if (![self animationTimer]) {
         if ([self delegate]) {
-            if ([[self delegate] respondsToSelector:@selector(animationViewBeganPlaying:)]) {
-                [[self delegate] animationViewBeganPlaying:self];
+            if ([[self delegate] respondsToSelector:@selector(animationViewDidStartPlaying:)]) {
+                [[self delegate] animationViewDidStartPlaying:self];
             }
         }
         
@@ -105,8 +105,8 @@
         [self setAnimationTimer:nil];
         
         if ([self delegate]) {
-            if ([[self delegate] respondsToSelector:@selector(animationViewStoppedPlaying:)]) {
-                [[self delegate] animationViewStoppedPlaying:self];
+            if ([[self delegate] respondsToSelector:@selector(animationViewDidStopPlaying:)]) {
+                [[self delegate] animationViewDidStopPlaying:self];
             }
         }
     }
@@ -117,14 +117,18 @@
     _currentFrame = 0;
     [animationImageView setImage:[[self animationImages] objectAtIndex:0]];
     if ([self delegate]) {
-        if ([[self delegate] respondsToSelector:@selector(animationViewRewound:)]) {
-            [[self delegate] animationViewRewound:self];
+        if ([[self delegate] respondsToSelector:@selector(animationViewDidRewind:)]) {
+            [[self delegate] animationViewDidRewind:self];
         }
     }
 }
 
 -(NSInteger)currentFrame {
     return _currentFrame;
+}
+
+-(BOOL)isPlaying {
+    return (self.animationTimer != nil);
 }
 
 #pragma mark - Action Targets;
@@ -149,8 +153,8 @@
         [animationImageView setNeedsDisplay];
         _currentFrame = nextFrame;
         if ([self delegate]) {
-            if ([[self delegate] respondsToSelector:@selector(animationView:movedToFrame:)]) {
-                [[self delegate] animationView:self movedToFrame:nextFrame];
+            if ([[self delegate] respondsToSelector:@selector(animationView:didGoToFrame:)]) {
+                [[self delegate] animationView:self didGoToFrame:nextFrame];
             }
         }
     }
@@ -172,7 +176,7 @@
     NSMutableArray *result = [NSMutableArray array];
     for (NSInteger imageI = 1; imageI <= numberOfFrames; imageI++) {
         NSString *numberString = (imageI < 10) ? [NSString stringWithFormat:@"0%i", imageI] : [NSString stringWithFormat:@"%i", imageI];
-        NSString *processedImageName = [NSString stringWithFormat:@"%@0%@", imageName, numberString];
+        NSString *processedImageName = [NSString stringWithFormat:@"%@00%@", imageName, numberString];
         [result addObject:[UIImage imageNamed:processedImageName]];
     }
     return [NSArray arrayWithArray:result];

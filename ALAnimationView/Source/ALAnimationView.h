@@ -25,10 +25,10 @@
 @protocol ALAnimationViewDelegate <NSObject>
 
 @optional
--(void)animationViewBeganPlaying:(ALAnimationView *)animationView;
--(void)animationViewStoppedPlaying:(ALAnimationView *)animationView;
--(void)animationViewRewound:(ALAnimationView *)animationView;
--(void)animationView:(ALAnimationView *)animationView movedToFrame:(NSInteger)frameNumber;
+-(void)animationViewDidStartPlaying:(ALAnimationView *)animationView;
+-(void)animationViewDidStopPlaying:(ALAnimationView *)animationView;
+-(void)animationViewDidRewind:(ALAnimationView *)animationView;
+-(void)animationView:(ALAnimationView *)animationView didGoToFrame:(NSInteger)frameNumber;
 
 @end
 
@@ -56,6 +56,7 @@
 -(void)stop;
 -(void)rewind;
 -(NSInteger)currentFrame;
+-(BOOL)isPlaying;
 
 #pragma mark - Static Methods;
 
