@@ -76,13 +76,13 @@
     return [self initWithFrame:frame
                animationImages:animationImages
              animationDuration:animationDuration
-                       repeats:NO];
+                       repeats:YES];
 }
 
 #pragma mark - Public Methods;
 
 -(void)play {
-    if (![self animationTimer]) {
+    if (![self animationTimer] && _totalFrames > 0) {
         if ([self delegate]) {
             if ([[self delegate] respondsToSelector:@selector(animationViewDidStartPlaying:)]) {
                 [[self delegate] animationViewDidStartPlaying:self];
@@ -115,10 +115,13 @@
 -(void)rewind {
     [self stop];
     _currentFrame = 0;
-    [animationImageView setImage:[[self animationImages] objectAtIndex:0]];
-    if ([self delegate]) {
-        if ([[self delegate] respondsToSelector:@selector(animationViewDidRewind:)]) {
-            [[self delegate] animationViewDidRewind:self];
+    
+    if (_totalFrames > 0) {
+        [animationImageView setImage:[[self animationImages] objectAtIndex:0]];
+        if ([self delegate]) {
+            if ([[self delegate] respondsToSelector:@selector(animationViewDidRewind:)]) {
+                [[self delegate] animationViewDidRewind:self];
+            }
         }
     }
 }
@@ -175,9 +178,24 @@
     
     NSMutableArray *result = [NSMutableArray array];
     for (NSInteger imageI = 1; imageI <= numberOfFrames; imageI++) {
-        NSString *numberString = (imageI < 10) ? [NSString stringWithFormat:@"0%i", imageI] : [NSString stringWithFormat:@"%i", imageI];
-        NSString *processedImageName = [NSString stringWithFormat:@"%@00%@", imageName, numberString];
-        [result addObject:[UIImage imageNamed:processedImageName]];
+        NSString *numberString = [NSString stringWithFormat:@"%i", imageI];
+        NSInteger zeroesToAppend = numberOfZeroes - numberString.length;
+        NSString *zeroString = @"";
+        for (NSInteger zeroI = 0; zeroI < zeroesToAppend; zeroI++) {
+            zeroString = [NSString stringWithFormat:@"%@0", zeroString];
+        }
+        
+        NSString *processedImageName = [NSString stringWithFormat:@"%@%@%@", imageName, zeroString, numberString];
+        UIImage *animationImage = [UIImage imageNamed:processedImageName];
+        
+        if (animationImage) {
+            [result addObject:animationImage];
+        }
+        else {
+            if (DEBUG) {
+                NSLog(@"ALAnimationView: ERROR: Couldn't find image: %@", processedImageName);
+            }
+        }
     }
     return [NSArray arrayWithArray:result];
 }
