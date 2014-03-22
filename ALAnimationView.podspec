@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
    s.name           = 'ALAnimationView'
-   s.version        = '0.1'
+   s.version        = '0.1.0'
    s.summary        = 'UIImage animation view for iOS'
    s.license        = { :type => 'MIT', file: 'LICENSE' }
    s.homepage       = 'https://github.com/al7/ALAnimationView'
