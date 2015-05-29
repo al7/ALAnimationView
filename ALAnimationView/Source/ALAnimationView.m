@@ -79,6 +79,12 @@
                        repeats:YES];
 }
 
+#pragma mark - Base Overrides;
+
+-(void)layoutSubviews {
+    animationImageView.frame = self.bounds;
+}
+
 #pragma mark - Public Methods;
 
 -(void)play {
@@ -178,7 +184,7 @@
     
     NSMutableArray *result = [NSMutableArray array];
     for (NSInteger imageI = 1; imageI <= numberOfFrames; imageI++) {
-        NSString *numberString = [NSString stringWithFormat:@"%i", imageI];
+        NSString *numberString = [NSString stringWithFormat:@"%li", (long)imageI];
         NSInteger zeroesToAppend = numberOfZeroes - numberString.length;
         NSString *zeroString = @"";
         for (NSInteger zeroI = 0; zeroI < zeroesToAppend; zeroI++) {
