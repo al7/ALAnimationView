@@ -8,7 +8,7 @@ Find out how to use the class in the documentation below:
 
 #### Installation:
 
-To use this class in your project, all you need to do is copy the files ALAnimationView.h and ALAnimationView.m. If you are using *Cocoapods* t is recommended that you add the 'ALAnimationView' pod into your Podfile. 
+To use this class in your project, all you need to do is copy the files ALAnimationView.h and ALAnimationView.m. If you are using *CocoaPods* t is recommended that you add the 'ALAnimationView' pod into your Podfile. 
 
 
 #### Using the class:
